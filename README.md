@@ -1,4 +1,4 @@
-##End-to-End ELT Analytics Pipeline
+## End-to-End ELT Analytics Pipeline
 ![Weather Dashboard](Simple%20elt.png)
 
 This project demonstrates a modern ELT analytics architecture, covering the full lifecycle of data — from ingestion to analytics-ready models and exploration.
@@ -7,7 +7,7 @@ The goal is to show not just dashboarding, but how to design, build, and operate
 
 Architecture Overview
 
-#Flow:
+# Flow:
 
 External API → Python Ingestion → BigQuery (raw) 
 → dbt (staging → marts) → Apache Superset
@@ -66,10 +66,10 @@ dbt environment
 
 Apache Superset with BigQuery support
 
-Key Challenges & How They Were Solved
+## Key Challenges & How They Were Solved
 1. dbt Adapter Version Mismatch (Local vs Docker)
 
-Problem:
+# Problem:
 Different dbt adapter versions between local and containerized environments caused runtime errors and inconsistent behavior.
 
 Solution:
@@ -113,5 +113,6 @@ Version-controlled configuration and models with Git
 Outcome:
 Anyone can clone the repo and run the full stack with minimal setup.
 ![Weather Dashboard](temperature-readings-2026-02-07T13-04-06.966Z.jpg)
+
 
 

@@ -1,0 +1,75 @@
+version: "3.9"
+
+services:
+  airflow-db:
+    image: postgres:14.17
+    environment:
+      POSTGRES_DB: airflow
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+    networks:
+      - my-network
+
+  superset-db:
+    image: postgres:14.17
+    environment:
+      POSTGRES_DB: superset
+      POSTGRES_USER: superset
+      POSTGRES_PASSWORD: superset
+    networks:
+      - my-network
+
+  af:
+    image: airflow-dbt:latest
+    container_name: airflow_contained
+    ports:
+      - "8000:8080"
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/gcp/sa.json
+      DBT_PROFILES_DIR: /opt/dbt/profiles
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./api_request:/opt/airflow/api_request
+      - ./dbt:/opt/dbt
+      - C:/Users/admin/.dbt:/opt/dbt/profiles:ro
+      - C:/Users/admin/Desktop/complete_data_project/elt/weather_data_project/api_request/keys/gothic-sled-453213-i2-b3075898f549.json:/opt/airflow/gcp/sa.json:ro
+    depends_on:
+      - airflow-db
+    networks:
+      - my-network
+    command: >
+      bash -c "airflow db migrate && airflow standalone"
+
+  superset:
+    image: superset-bigquery:3.1
+    container_name: superset
+    ports:
+      - "8088:8088"
+    environment:
+      SUPERSET_SECRET_KEY: supersecretkey
+      SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://superset:superset@superset-db:5432/superset
+      GOOGLE_APPLICATION_CREDENTIALS: /app/superset/gcp/sa.json
+    volumes:
+      - C:/Users/admin/Desktop/complete_data_project/elt/weather_data_project/api_request/keys/gothic-sled-453213-i2-b3075898f549.json:/app/superset/gcp/sa.json:ro
+    depends_on:
+      - superset-db
+    networks:
+      - my-network
+    command: >
+      bash -c "
+      superset db upgrade &&
+      superset fab create-admin
+        --username admin
+        --firstname Admin
+        --lastname User
+        --email admin@superset.com
+        --password admin || true &&
+      superset init &&
+      superset run -h 0.0.0.0 -p 8088
+      "
+
+networks:
+  my-network:
+    driver: bridge

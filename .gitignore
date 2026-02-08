@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+
+# Virtual env
+.venv/
+
+# Secrets
+api_request/keys/
+*.json
+.env
+
+# Airflow
+airflow/logs/
+airflow/plugins/
+
+# dbt
+target/
+dbt_packages/
+

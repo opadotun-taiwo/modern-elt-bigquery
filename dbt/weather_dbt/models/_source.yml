@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: weather_data
+    database: gothic-sled-453213-i2   
+    schema: weather_data                
+    tables:
+      - name: raw_weather_data
+        columns:
+          - name: city
+          - name: temperature
+          - name: weather_descriptions
+          - name: wind_speed
+          - name: time
+          - name: inserted_at
+          - name: utc_offset
+        

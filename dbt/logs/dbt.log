@@ -1,0 +1,307 @@
+[0m07:13:28.057619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152488DCBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001524BBB3650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015249554140>]}
+
+
+============================== 07:13:28.067995 | 36bb448b-2c56-4fc0-91bd-0a3438eb08ed ==============================
+[0m07:13:28.067995 [info ] [MainThread]: Running with dbt=1.11.2
+[0m07:13:28.071407 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init weather_dbt', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m07:13:28.198564 [debug] [MainThread]: Starter project path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Lib\site-packages\dbt\include\starter_project
+[0m07:13:28.245576 [info ] [MainThread]: 
+Your new dbt project "weather_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:13:28.254707 [info ] [MainThread]: Setting up your profile.
+[0m07:18:51.709420 [info ] [MainThread]: Profile weather_dbt written to C:\Users\admin\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m07:18:51.716650 [debug] [MainThread]: Command `dbt init` succeeded at 07:18:51.715377 after 323.91 seconds
+[0m07:18:51.718262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001524B66EA80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015268CF0E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000152661A3FB0>]}
+[0m07:18:51.723638 [debug] [MainThread]: Flushing usage events
+[0m07:18:53.741460 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:19:42.706288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8DEBA89E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8E1292CF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8E1292BA0>]}
+
+
+============================== 07:19:42.719027 | 93ef2435-b5cf-444e-9dac-d5e3a98ab1d3 ==============================
+[0m07:19:42.719027 [info ] [MainThread]: Running with dbt=1.11.2
+[0m07:19:42.722193 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m07:19:42.761647 [info ] [MainThread]: dbt version: 1.11.2
+[0m07:19:42.761647 [info ] [MainThread]: python version: 3.12.0
+[0m07:19:42.761647 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m07:19:42.761647 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m07:19:51.931294 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m07:19:51.931294 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m07:19:51.931294 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m07:19:51.931294 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m07:19:51.931294 [debug] [MainThread]: Command `dbt debug` failed at 07:19:51.931294 after 9.48 seconds
+[0m07:19:51.931294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8E217D9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8FF0E5940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8FEF24D40>]}
+[0m07:19:51.931294 [debug] [MainThread]: Flushing usage events
+[0m07:19:53.846833 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:30:43.218543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001541CBA9100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015419997B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001541AF71F40>]}
+
+
+============================== 07:30:43.232728 | e26e2e23-e445-49b3-b2c5-a921b3ff07bb ==============================
+[0m07:30:43.232728 [info ] [MainThread]: Running with dbt=1.11.2
+[0m07:30:43.232728 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m07:30:43.266749 [info ] [MainThread]: dbt version: 1.11.2
+[0m07:30:43.266749 [info ] [MainThread]: python version: 3.12.0
+[0m07:30:43.266749 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m07:30:43.266749 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m07:30:52.693886 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m07:30:52.693886 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m07:30:52.693886 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m07:30:52.693886 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m07:30:52.693886 [debug] [MainThread]: Command `dbt debug` failed at 07:30:52.693886 after 9.73 seconds
+[0m07:30:52.693886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001541CABF680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001543A738A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001543A975700>]}
+[0m07:30:52.693886 [debug] [MainThread]: Flushing usage events
+[0m07:30:54.524675 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:32:25.796125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BFFB1DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BF5EFFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BF5EC7A0>]}
+
+
+============================== 07:32:25.796125 | 0f947496-b084-4697-b2ec-b5cace2b8540 ==============================
+[0m07:32:25.796125 [info ] [MainThread]: Running with dbt=1.11.2
+[0m07:32:25.796125 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m07:32:25.828896 [info ] [MainThread]: dbt version: 1.11.2
+[0m07:32:25.831664 [info ] [MainThread]: python version: 3.12.0
+[0m07:32:25.831664 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m07:32:25.833551 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m07:32:34.655074 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m07:32:34.655074 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m07:32:34.655074 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m07:32:34.655074 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m07:32:34.655074 [debug] [MainThread]: Command `dbt debug` failed at 07:32:34.655074 after 9.13 seconds
+[0m07:32:34.655074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0BF459190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0DC9DB440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0D8E8FB00>]}
+[0m07:32:34.655074 [debug] [MainThread]: Flushing usage events
+[0m07:32:36.750577 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:37:47.626352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C97E8D970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C986C6330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C97BA6A80>]}
+
+
+============================== 07:37:47.631407 | c2006038-2ff6-41b6-ac3c-e3d07e3645b1 ==============================
+[0m07:37:47.631407 [info ] [MainThread]: Running with dbt=1.11.2
+[0m07:37:47.631407 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m07:37:47.659730 [info ] [MainThread]: dbt version: 1.11.2
+[0m07:37:47.659730 [info ] [MainThread]: python version: 3.12.0
+[0m07:37:47.659730 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m07:37:47.659730 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m07:37:56.451092 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m07:37:56.451092 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m07:37:56.451092 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m07:37:56.466417 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m07:37:56.471533 [debug] [MainThread]: Command `dbt debug` failed at 07:37:56.471533 after 9.06 seconds
+[0m07:37:56.471533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C992DB440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CB393CB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CB5988590>]}
+[0m07:37:56.474296 [debug] [MainThread]: Flushing usage events
+[0m07:37:59.049372 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:56:22.216145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB87DAF440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB8782D250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB87B3AD20>]}
+
+
+============================== 07:56:22.232589 | 0f19ef90-51ef-43cf-9430-2c599acc0587 ==============================
+[0m07:56:22.232589 [info ] [MainThread]: Running with dbt=1.9.2
+[0m07:56:22.232951 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m07:56:22.301161 [info ] [MainThread]: dbt version: 1.9.2
+[0m07:56:22.301161 [info ] [MainThread]: python version: 3.12.0
+[0m07:56:22.301161 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m07:56:22.301161 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m07:56:31.637020 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m07:56:31.637020 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m07:56:31.637020 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m07:56:31.641286 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m07:56:31.641286 [debug] [MainThread]: Command `dbt debug` failed at 07:56:31.641286 after 9.61 seconds
+[0m07:56:31.641286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB87A3A7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA4CD51C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBA4DBD490>]}
+[0m07:56:31.641286 [debug] [MainThread]: Flushing usage events
+[0m07:56:33.583581 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:56:53.927137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024386ACAA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024386AC8FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024386ACAB70>]}
+
+
+============================== 07:56:53.927137 | d1eb2cb1-a3e6-4427-b487-f08b16d29c2a ==============================
+[0m07:56:53.927137 [info ] [MainThread]: Running with dbt=1.9.2
+[0m07:56:53.927137 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:Usersadmin.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug --profiles-dir C:Usersadmin.dbt', 'send_anonymous_usage_stats': 'True'}
+[0m07:56:53.970384 [info ] [MainThread]: dbt version: 1.9.2
+[0m07:56:53.972122 [info ] [MainThread]: python version: 3.12.0
+[0m07:56:53.972122 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m07:56:53.974039 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m07:56:53.974039 [info ] [MainThread]: Using profiles dir at C:Usersadmin.dbt
+[0m07:56:53.974039 [info ] [MainThread]: Using profiles.yml file at C:Usersadmin.dbt\profiles.yml
+[0m07:56:53.974039 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m07:56:53.974039 [info ] [MainThread]: Configuration:
+[0m07:56:53.974039 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m07:56:53.974039 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m07:56:53.979185 [info ] [MainThread]: Required dependencies:
+[0m07:56:53.979844 [debug] [MainThread]: Executing "git --help"
+[0m07:56:54.012162 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:56:54.012162 [debug] [MainThread]: STDERR: "b''"
+[0m07:56:54.012162 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:56:54.012162 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m07:56:54.012162 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m07:56:54.012162 [info ] [MainThread]: dbt looked for a profiles.yml file in C:Usersadmin.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m07:56:54.012162 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml> not found
+
+[0m07:56:54.012162 [debug] [MainThread]: Command `dbt debug` failed at 07:56:54.012162 after 0.26 seconds
+[0m07:56:54.012162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024386BC60F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024386793E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024386792030>]}
+[0m07:56:54.012162 [debug] [MainThread]: Flushing usage events
+[0m07:56:55.601558 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:00:49.574942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021405DF3E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021402D9C740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214067F2840>]}
+
+
+============================== 08:00:49.590791 | 070188d5-8e10-4b0e-99ea-743e27bacda5 ==============================
+[0m08:00:49.590791 [info ] [MainThread]: Running with dbt=1.9.2
+[0m08:00:49.590791 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:/Users/admin/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug --profiles-dir C:/Users/admin/.dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m08:00:49.624048 [info ] [MainThread]: dbt version: 1.9.2
+[0m08:00:49.624048 [info ] [MainThread]: python version: 3.12.0
+[0m08:00:49.624048 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m08:00:49.624048 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m08:00:58.327889 [info ] [MainThread]: Using profiles dir at C:/Users/admin/.dbt
+[0m08:00:58.333341 [info ] [MainThread]: Using profiles.yml file at C:/Users/admin/.dbt\profiles.yml
+[0m08:00:58.336207 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m08:00:58.336207 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:00:58.336207 [debug] [MainThread]: Command `dbt debug` failed at 08:00:58.336207 after 8.94 seconds
+[0m08:00:58.343227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021406183CE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000214238551C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002141FDDB6E0>]}
+[0m08:00:58.346209 [debug] [MainThread]: Flushing usage events
+[0m08:01:00.332542 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:01:54.918925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED1DCEC740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED21123B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED21122F60>]}
+
+
+============================== 08:01:54.920172 | 0809be57-5437-48ac-8559-c6212cedad8a ==============================
+[0m08:01:54.920172 [info ] [MainThread]: Running with dbt=1.9.2
+[0m08:01:54.920172 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug --profiles-dir C:\\Users\\admin\\.dbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m08:01:54.954761 [info ] [MainThread]: dbt version: 1.9.2
+[0m08:01:54.954761 [info ] [MainThread]: python version: 3.12.0
+[0m08:01:54.954761 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m08:01:54.954761 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m08:02:03.321061 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m08:02:03.321061 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m08:02:03.325138 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m08:02:03.326110 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:02:03.327069 [debug] [MainThread]: Command `dbt debug` failed at 08:02:03.327069 after 8.58 seconds
+[0m08:02:03.328347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED2185F740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED3E660EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED3EBD88C0>]}
+[0m08:02:03.328669 [debug] [MainThread]: Flushing usage events
+[0m08:02:05.256114 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:07:27.447867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6142E330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD604B13A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6361C740>]}
+
+
+============================== 08:07:27.468811 | 6f521afb-8f44-4293-875a-d7168c748b21 ==============================
+[0m08:07:27.468811 [info ] [MainThread]: Running with dbt=1.9.2
+[0m08:07:27.472714 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug --profiles-dir C:\\Users\\admin\\.dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m08:07:27.557029 [info ] [MainThread]: dbt version: 1.9.2
+[0m08:07:27.558822 [info ] [MainThread]: python version: 3.12.0
+[0m08:07:27.560462 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m08:07:27.561953 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m08:07:49.870412 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m08:07:49.870412 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m08:07:49.870412 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m08:07:49.875537 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:07:49.875537 [debug] [MainThread]: Command `dbt debug` failed at 08:07:49.875537 after 22.69 seconds
+[0m08:07:49.875537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD63938E60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD7FEE7F20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD7FEE6660>]}
+[0m08:07:49.875537 [debug] [MainThread]: Flushing usage events
+[0m08:07:51.819833 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:09:16.514320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208931CA9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208931CA4B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002089116F320>]}
+
+
+============================== 08:09:16.524569 | 78d99cc7-de2f-4d47-993e-55ad8fc53092 ==============================
+[0m08:09:16.524569 [info ] [MainThread]: Running with dbt=1.9.2
+[0m08:09:16.526577 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:09:16.561212 [info ] [MainThread]: dbt version: 1.9.2
+[0m08:09:16.563806 [info ] [MainThread]: python version: 3.12.0
+[0m08:09:16.563806 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m08:09:16.563806 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m08:09:25.272630 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m08:09:25.272630 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m08:09:25.272630 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m08:09:25.272630 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:09:25.272630 [debug] [MainThread]: Command `dbt debug` failed at 08:09:25.272630 after 8.98 seconds
+[0m08:09:25.272630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208933C00E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208B09B8470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000208B09B88C0>]}
+[0m08:09:25.272630 [debug] [MainThread]: Flushing usage events
+[0m08:09:27.516803 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:12:14.289737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0582F4DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B05AD72D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B05AD72E70>]}
+
+
+============================== 08:12:14.297360 | ab0214da-dca1-4792-9070-80759dd504e9 ==============================
+[0m08:12:14.297360 [info ] [MainThread]: Running with dbt=1.9.2
+[0m08:12:14.297360 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\admin\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug --profiles-dir C:\\Users\\admin\\.dbt --profile weather_dbt --log-level debug', 'send_anonymous_usage_stats': 'True'}
+[0m08:12:14.330194 [info ] [MainThread]: dbt version: 1.9.2
+[0m08:12:14.330194 [info ] [MainThread]: python version: 3.12.0
+[0m08:12:14.330194 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m08:12:14.330194 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m08:12:22.758804 [info ] [MainThread]: Using profiles dir at C:\Users\admin\.dbt
+[0m08:12:22.759948 [info ] [MainThread]: Using profiles.yml file at C:\Users\admin\.dbt\profiles.yml
+[0m08:12:22.760492 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml
+[0m08:12:22.761115 [info ] [MainThread]: adapter type: bigquery
+[0m08:12:22.761115 [info ] [MainThread]: adapter version: 1.9.2
+[0m08:12:22.761115 [info ] [MainThread]: Configuration:
+[0m08:12:22.761115 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:12:22.761115 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m08:12:22.761115 [info ] [MainThread]: Required dependencies:
+[0m08:12:22.766478 [debug] [MainThread]: Executing "git --help"
+[0m08:12:22.795422 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:12:22.804438 [debug] [MainThread]: STDERR: "b''"
+[0m08:12:22.831988 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:12:22.846261 [info ] [MainThread]: Connection:
+[0m08:12:22.847976 [info ] [MainThread]:   method: service-account
+[0m08:12:22.848445 [info ] [MainThread]:   database: gothic-sled-453213-i2
+[0m08:12:22.851141 [info ] [MainThread]:   execution_project: gothic-sled-453213-i2
+[0m08:12:22.851141 [info ] [MainThread]:   schema: analytics
+[0m08:12:22.851141 [info ] [MainThread]:   location: US
+[0m08:12:22.851141 [info ] [MainThread]:   priority: None
+[0m08:12:22.851141 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m08:12:22.851141 [info ] [MainThread]:   impersonate_service_account: None
+[0m08:12:22.856167 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m08:12:22.856167 [info ] [MainThread]:   job_retries: 1
+[0m08:12:22.856167 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m08:12:22.856167 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m08:12:22.860864 [info ] [MainThread]:   timeout_seconds: None
+[0m08:12:22.860864 [info ] [MainThread]:   client_id: None
+[0m08:12:22.864622 [info ] [MainThread]:   token_uri: None
+[0m08:12:22.866632 [info ] [MainThread]:   compute_region: None
+[0m08:12:22.866632 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m08:12:22.868640 [info ] [MainThread]:   gcs_bucket: None
+[0m08:12:22.868640 [info ] [MainThread]:   dataproc_batch: None
+[0m08:12:22.870550 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m08:12:23.612855 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m08:12:23.612855 [debug] [MainThread]: On debug: select 1 as id
+[0m08:12:23.612855 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:12:27.229255 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=gothic-sled-453213-i2&j=bq:US:bfec44e4-4863-4c2f-993a-8e2115287d3d&page=queryresults
+[0m08:12:37.480145 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:12:37.482998 [info ] [MainThread]: [31m1 check failed:[0m
+[0m08:12:37.485798 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\dbt\dbt_project.yml> not found
+
+[0m08:12:37.487352 [debug] [MainThread]: Command `dbt debug` failed at 08:12:37.487352 after 23.44 seconds
+[0m08:12:37.487352 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m08:12:37.491304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B05AC30FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B07831F470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B076773C80>]}
+[0m08:12:37.493390 [debug] [MainThread]: Flushing usage events
+[0m08:12:39.310315 [debug] [MainThread]: An error was encountered while trying to flush usage events

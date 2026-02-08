@@ -1,0 +1,38 @@
+[0m15:03:15.144477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A179934B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A179E7C6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A179E7C740>]}
+
+
+============================== 15:03:15.153295 | bb48b512-8973-46ef-ae24-26a17ec156a2 ==============================
+[0m15:03:15.153295 [info ] [MainThread]: Running with dbt=1.9.2
+[0m15:03:15.154219 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:/Program Files/Git/opt/dbt/profiles', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug --profiles-dir C:/Program Files/Git/opt/dbt/profiles', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:03:15.189650 [info ] [MainThread]: dbt version: 1.9.2
+[0m15:03:15.204105 [info ] [MainThread]: python version: 3.12.0
+[0m15:03:15.205187 [info ] [MainThread]: python path: C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\.venv\Scripts\python.exe
+[0m15:03:15.206197 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m15:03:15.207197 [info ] [MainThread]: Using profiles dir at C:/Program Files/Git/opt/dbt/profiles
+[0m15:03:15.208204 [info ] [MainThread]: Using profiles.yml file at C:/Program Files/Git/opt/dbt/profiles\profiles.yml
+[0m15:03:15.209005 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\api_request\dbt_project.yml
+[0m15:03:15.210013 [info ] [MainThread]: Configuration:
+[0m15:03:15.211523 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m15:03:15.212573 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:03:15.213619 [info ] [MainThread]: Required dependencies:
+[0m15:03:15.214621 [debug] [MainThread]: Executing "git --help"
+[0m15:03:15.240520 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:03:15.240520 [debug] [MainThread]: STDERR: "b''"
+[0m15:03:15.240520 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:03:15.253969 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:03:15.254982 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:03:15.256071 [info ] [MainThread]: dbt looked for a profiles.yml file in C:/Program Files/Git/opt/dbt/profiles\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:03:15.256071 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\admin\Desktop\complete_data_project\elt\weather_data_project\api_request\dbt_project.yml> not found
+
+[0m15:03:15.256071 [debug] [MainThread]: Command `dbt debug` failed at 15:03:15.256071 after 0.40 seconds
+[0m15:03:15.256071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A17A606AE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A17A636B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A179934B90>]}
+[0m15:03:15.256071 [debug] [MainThread]: Flushing usage events
+[0m15:03:17.139702 [debug] [MainThread]: An error was encountered while trying to flush usage events

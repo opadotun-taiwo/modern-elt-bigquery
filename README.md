@@ -112,4 +112,5 @@ Version-controlled configuration and models with Git
 
 Outcome:
 Anyone can clone the repo and run the full stack with minimal setup.
-![Weather Dashboard](images/weather_dashboard.png)
+![Weather Dashboard](temperature-readings-2026-02-07T13-04-06.966Z.jpg)
+

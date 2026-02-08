@@ -1,5 +1,5 @@
 ##End-to-End ELT Analytics Pipeline
-![Weather Dashboard](images/weather_dashboard.png)
+![Weather Dashboard](Simple%20elt.png)
 
 This project demonstrates a modern ELT analytics architecture, covering the full lifecycle of data — from ingestion to analytics-ready models and exploration.
 
@@ -113,4 +113,5 @@ Version-controlled configuration and models with Git
 Outcome:
 Anyone can clone the repo and run the full stack with minimal setup.
 ![Weather Dashboard](temperature-readings-2026-02-07T13-04-06.966Z.jpg)
+
 
